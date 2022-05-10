@@ -1,0 +1,25 @@
+{
+    "name": "psyfactory/omnik-inverter-to-pvoutput",
+    "description": "php script to send data from an Omnik inverter to Pvoutput",
+    "authors": [
+        {
+            "name": "Kees Brandenburg",
+            "email": "sales@psyfactory.nl",
+            "homepage": "https://psyfactory.nl"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "vlucas/phpdotenv": "^v5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "PsyPvoutput\\": "includes/pvoutput",
+            "PsyOmnik\\": "includes/omnik"
+        }
+    }
+}
